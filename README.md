@@ -10,7 +10,27 @@ $ npm i -g @nestjs/cli
 $ nest new nestjs-new-project
 ```
 
+### create module
 
+```bash
+$ nest g module name
+```
+
+### create controller
+
+```bash
+$ nest g controller name --no-spec
+```
+
+### create service
+
+```bash
+$ nest g service name --no-spec
+```
+
+1. g - generate
+2. name - some name for module and other
+3. --no-spec - don't generate spec (test) for this controller
 
 -------------------------------------------
 
