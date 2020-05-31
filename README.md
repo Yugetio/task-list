@@ -28,9 +28,16 @@ $ nest g controller name --no-spec
 $ nest g service name --no-spec
 ```
 
+## add lib for validation data
+
+```bash
+$ npm i class-validator class transformer
+```
+
 1. g - generate
 2. name - some name for module and other
 3. --no-spec - don't generate spec (test) for this controller
+
 
 -------------------------------------------
 
