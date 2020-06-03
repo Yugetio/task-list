@@ -13,6 +13,10 @@ async function bootstrap() {
   const logger = new Logger('bootstrap');
   const app = await NestFactory.create(AppModule);
 
+  if (process.env.NODE_ENV === 'development') {
+    app.enableCors()
+  }
+
   const options = new DocumentBuilder()
     .setTitle('MagiTests')
     .setDescription('The MagiTests API description')
